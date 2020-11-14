@@ -124,7 +124,7 @@ function elementHovered(element,event){
 }
 
 function mouseLeft(ev){
-    if(ev.toElement.getAttribute('carrid')==null){
+    if(ev.toElement.getAttribute('carrid')==null || ev.toElement==null){
         movingState=movingStates.movingFreely;
     }
 }
